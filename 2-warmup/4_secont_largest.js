@@ -1,4 +1,4 @@
-let arr = [10];
+let arr = [10,10,5];
 
 function secondLargest(a) {
   if (a.length < 2) {
@@ -11,7 +11,7 @@ function secondLargest(a) {
     if (a[i] >max) {
         secMax = max;
         max=a[i]
-    } else if (secMax < a[i]) {
+    } else if (secMax < a[i] && a[i]< max) {
         secMax=a[i]
         
     }
