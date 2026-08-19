@@ -34,10 +34,6 @@
      // Restore the original sign to the reversed number
      let num = sign * reverseNumber;
      
-     // Check for 32-bit signed integer overflow
-     // If result is outside [-2^31, 2^31 - 1], return 0
-     if (num < -2147483648 || num > 2147483647) return 0;
-     
      return num;
    
  };
